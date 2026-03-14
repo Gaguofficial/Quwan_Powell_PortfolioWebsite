@@ -1,0 +1,62 @@
+ /* Slider container */
+
+        .logo-slider {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Track holding icons */
+
+        .logo-track {
+            display: flex;
+            width: max-content;
+        }
+
+        /* Icon styling */
+
+        .logo-track img {
+            width: 70px;
+            margin: 15px 35px;
+            transition: transform .3s;
+        }
+
+        .logo-track img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animations */
+
+        .scroll-left {
+            animation: scrollLeft 25s linear infinite;
+        }
+
+        .scroll-right {
+            animation: scrollRight 25s linear infinite;
+        }
+
+        @keyframes scrollLeft {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-40%);
+            }
+        }
+
+        @keyframes scrollRight {
+            from {
+                transform: translateX(-40%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .stack-title {
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+
+    <title>Tech Stack</title>
+
+    <style>
+
+        /* Slider container */
+
+        .logo-slider {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Track holding icons */
+
+        .logo-track {
+            display: flex;
+            width: max-content;
+        }
+
+        /* Icon styling */
+
+        .logo-track img {
+            width: 70px;
+            margin: 15px 35px;
+            transition: transform .3s;
+        }
+
+        .logo-track img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animations */
+
+        .scroll-left {
+            animation: scrollLeft 25s linear infinite;
+        }
+
+        .scroll-right {
+            animation: scrollRight 25s linear infinite;
+        }
+
+        @keyframes scrollLeft {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-40%);
+            }
+        }
+
+        @keyframes scrollRight {
+            from {
+                transform: translateX(-40%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .stack-title {
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<section id="tech-stack" class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">Tech Stack</h2>
+
+
+        <!-- Programs & Databases -->
+
+        <h5 class="stack-title">Programs & Databases</h5>
+
+        <div class="logo-slider">
+
+            <div class="logo-track scroll-left">
+
+                <img src="assets/img/tech/java.png" alt="Java">
+                <img src="assets/img/tech/python.png" alt="Python">
+                <img src="assets/img/tech/javascript.png" alt="JavaScript">
+                <img src="assets/img/tech/php.png" alt="PHP">
+                <img src="assets/img/tech/mysql.png" alt="MySQL">
+                <img src="assets/img/tech/sqlserver.png" alt="SQL Server">
+
+                <!-- duplicate for infinite loop -->
+
+                <img src="assets/img/tech/java.png">
+                <img src="assets/img/tech/python.png">
+                <img src="assets/img/tech/javascript.png">
+                <img src="assets/img/tech/php.png">
+                <img src="assets/img/tech/mysql.png">
+                <img src="assets/img/tech/sqlserver.png">
+
+            </div>
+
+        </div>
+
+
+        <!-- Web & Frameworks -->
+
+        <h5 class="stack-title">Web & Frameworks</h5>
+
+        <div class="logo-slider">
+
+            <div class="logo-track scroll-right">
+
+                <img src="assets/img/tech/html.png" alt="HTML">
+                <img src="assets/img/tech/css.png" alt="CSS">
+                <img src="assets/img/tech/bootstrap.png" alt="Bootstrap">
+                <img src="assets/img/tech/javascript.png" alt="JavaScript">
+                <img src="assets/img/tech/php.png" alt="PHP">
+
+                <!-- duplicate -->
+
+                <img src="assets/img/tech/html.png">
+                <img src="assets/img/tech/css.png">
+                <img src="assets/img/tech/bootstrap.png">
+                <img src="assets/img/tech/javascript.png">
+                <img src="assets/img/tech/php.png">
+
+            </div>
+
+        </div>
+
+
+        <!-- Tools & Platforms -->
+
+        <h5 class="stack-title">Tools & Platforms</h5>
+
+        <div class="logo-slider">
+
+            <div class="logo-track scroll-left">
+
+                <img src="assets/img/tech/git.png" alt="Git">
+                <img src="assets/img/tech/github.png" alt="GitHub">
+                <img src="assets/img/tech/vscode.png" alt="VS Code">
+                <img src="assets/img/tech/intellij.png" alt="IntelliJ">
+                <img src="assets/img/tech/linux.png" alt="Linux">
+                <img src="assets/img/tech/windows.png" alt="Windows">
+
+                <!-- duplicate -->
+
+                <img src="assets/img/tech/git.png">
+                <img src="assets/img/tech/github.png">
+                <img src="assets/img/tech/vscode.png">
+                <img src="assets/img/tech/intellij.png">
+                <img src="assets/img/tech/linux.png">
+                <img src="assets/img/tech/windows.png">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</body>
+
+</html>

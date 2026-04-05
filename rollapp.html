@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Roll Transfer App | Quwan Powell</title>
+  <meta name="description" content="Roll Transfer App project documentation and system design by Quwan Powell">
+  <meta name="keywords" content="ASP.NET, MVC, SQL Server, ERD, UML, Roll Transfer App">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS Files -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/techstack.css" rel="stylesheet">
+
+  <style>
+    .custom-red-btn {
+      background-color: #DC4D41;
+      border-color: #DC4D41;
+    }
+
+    .custom-red-btn:hover {
+      background-color: #c74439;
+      border-color: #c74439;
+    }
+
+    .project-hero {
+      padding: 100px 0 70px;
+    }
+
+    .project-section-img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      object-fit: cover;
+    }
+
+    .project-block {
+      padding: 70px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .project-block:last-child {
+      border-bottom: none;
+    }
+
+    .project-label {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #DC4D41;
+      margin-bottom: 10px;
+    }
+
+    .project-text h2 {
+      margin-bottom: 20px;
+    }
+
+    .project-text p {
+      line-height: 1.9;
+      margin-bottom: 15px;
+    }
+
+    .project-tag {
+      display: inline-block;
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      padding: 8px 14px;
+      border-radius: 30px;
+      margin: 6px 8px 0 0;
+      font-size: 14px;
+    }
+
+    .section-alt {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"></a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#erd">ERD</a></li>
+          <li><a href="#mvc">MVC</a></li>
+          <li><a href="#usecase">Use Case</a></li>
+          <li><a href="#barcode">Barcode Tag</a></li>
+          <li><a href="#ui">UI Mockup</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section id="hero" class="hero section light-background project-hero">
+      <div class="container">
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <h1>Roll Transfer App</h1>
+            <h3>System Design and Documentation</h3>
+            <p>
+              This project is a concept for a manufacturing-focused application used to track paper rolls and manage transfers between departments. The system was designed using relational database planning, MVC architecture, and user-centered workflow thinking.
+            </p>
+
+            <div class="mt-4">
+              <span class="project-tag">Drow.io</span>
+              <span class="project-tag">UI/UX</span>
+              <span class="project-tag">ASP.NET MVC</span>
+              <span class="project-tag">C#</span>
+              <span class="project-tag">SQL Server</span>
+              <span class="project-tag">ERD</span>
+              <span class="project-tag">UML</span>
+            </div>
+
+            <div class="mt-4">
+              <a href="index.html#Projects" class="btn btn-primary custom-red-btn">Back to Projects</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <img src="images/programingImages/Project7/rollapp/html_elements/heropaperrolls.jpg" class="img-fluid project-section-img" alt="Roll Transfer App Hero Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="project-block">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <img src="images/programingImages/Project7/rollapp/html_elements/bannerpaperrolls.jpg" class="project-section-img" alt="Project Overview">
+          </div>
+          <div class="col-lg-6 project-text">
+            <div class="project-label">Project Overview</div>
+            <h2>What problem this system is solving</h2>
+            <p>
+              The Roll Transfer App is designed to track paper rolls inside a production environment. Operators would be able to scan or enter a barcode, identify the roll, and manage movement between departments in a structured way.
+            </p>
+            <p>
+              The goal of the system is to reduce confusion, improve visibility, and create a cleaner way to manage where each roll is currently located and where it has been transferred over time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ERD -->
+    <section id="erd" class="project-block section-alt">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-4 order-2 order-lg-1 project-text">
+            <div class="project-label">Database Design</div>
+            <h2>Entity Relationship Diagram (ERD)</h2>
+            <p>
+              This ERD shows the relational database structure of the application. The system uses three main tables: <strong>Departments</strong>, <strong>Rolls</strong>, and <strong>Transfers</strong>.
+            </p>
+            <p>
+              Rolls belong to a department, and each roll can have multiple transfer records. The transfer table allows the application to keep track of movement history while the roll table stores the current department and roll details.
+            </p>
+          </div>
+          <div class="col-lg-8 order-1 order-lg-2" >
+            <img src="images/programingImages/Project7/rollapp/roll_erd.png" class="project-section-img" alt="ERD Diagram">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MVC -->
+    <section id="mvc" class="project-block">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-8">
+            <img src="images/programingImages/Project7/rollapp/mvcflow.png" class="project-section-img" alt="MVC Diagram">
+          </div>
+          <div class="col-lg-4 project-text">
+            <div class="project-label">Architecture</div>
+            <h2>MVC Application Flow</h2>
+            <p>
+              The project was structured around the MVC pattern. The <strong>View</strong> handles the user interface, the <strong>Controller</strong> processes requests and validation, and the <strong>Model</strong> handles the business logic and data structure.
+            </p>
+            <p>
+              Separate MVC flows were designed for the main business process of transferring a roll as well as general CRUD roll management. This helps keep the application modular and easier to maintain.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Case -->
+    <section id="usecase" class="project-block section-alt">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-4 order-2 order-lg-1 project-text">
+            <div class="project-label">System Interaction</div>
+            <h2>Use Case Diagram</h2>
+            <p>
+              The use case diagram focuses on the user’s interaction with the system. The main actions include adding a roll, viewing rolls, editing roll information, deleting a roll, and transferring a roll between departments.
+            </p>
+            <p>
+              This diagram helps communicate the main functions of the system at a high level without going into implementation details.
+            </p>
+          </div>
+          <div class="col-lg-8 order-1 order-lg-2">
+            <img src="images/programingImages/Project7/rollapp/usecase.png" class="project-section-img" alt="Use Case Diagram">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barcode -->
+    <section id="barcode" class="project-block">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <img src="images/programingImages/Project7/rollapp/tagimg.png" class="project-section-img" alt="Barcode Tag Design">
+          </div>
+          <div class="col-lg-6 project-text">
+            <div class="project-label">Tag Design</div>
+            <h2>Barcode Tag for Roll Identification</h2>
+            <p>
+              A barcode tag was also designed as part of the system concept. This tag would be attached directly to the paper roll and scanned by operators to identify the roll quickly.
+            </p>
+            <p>
+              The label focuses only on physical roll details such as barcode, manufacturer, paper type, weight, and colour. Internal department tracking is intentionally managed inside the application UI instead of being printed on the label.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI -->
+    <section id="ui" class="project-block section-alt">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-4 order-2 order-lg-1 project-text">
+            <div class="project-label">Interface Design</div>
+            <h2>UI Mockup and Visual Layout</h2>
+            <p>
+              A UI concept was created to show how the system could look from the user’s perspective. The design includes pages such as the roll list, add roll form, transfer page, and roll details screen.
+            </p>
+            <p>
+              The focus of the UI was clarity, ease of use, and a clean industrial/business feel that fits the project context.
+            </p>
+          </div>
+          <div class="col-lg-8 order-1 order-lg-2">
+            <img src="images/programingImages/Project7/rollapp/inventory_ui.png" class="project-section-img" alt="UI Mockup">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More UI-->
+     <!-- UI -->
+    <section id="ui" class="project-block section-alt">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="images/programingImages/Project7/rollapp/add_new_roll_ui.png" class="project-section-img" alt="UI Mockup">
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="images/programingImages/Project7/rollapp/dashbord_ui.png" class="project-section-img" alt="UI Mockup">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="ui" class="project-block section-alt">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="images/programingImages/Project7/rollapp/transfers_ui.png" class="project-section-img" alt="UI Mockup">
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="images/programingImages/Project7/rollapp/detailpage.png" class="project-section-img" alt="UI Mockup">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <section>
+      <div class="container">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-12 text-center">
+              <a href="index.html#Projects" class="btn btn-primary custom-red-btn">Back to Portfolio</a>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
